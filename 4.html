@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var s1 = "0.0.0.0";
+        var reg = /(25[0-5]|2[0-4]\d|1?\d\d?\.){3}(25[0-5]|2[0-4]\d|1?\d\d?)/
+        console.log(reg.test("255.1.1.1")); // true 
+        console.log(reg.test("192.168.68.178")); // true
+        console.log(reg.test("255.255.255.256")); // false
+        console.log(reg.test('192.168.68.178'));//true
+        console.log(reg.test('2.21.456.12'));//false
+    </script>
+</html>
